@@ -58,6 +58,7 @@ function createServer() {
         res.setHeader('Content-Type', 'application/json');
 
         /*
+
         res.setHeader('Content-Type', 'text/html');
         res.end(`
   <!DOCTYPE html>
@@ -66,7 +67,9 @@ function createServer() {
       <pre><code>${JSON.stringify(expense, null, 2)}</code></pre>
     </body>
   </html>
-`); */
+`);
+
+        */
 
         return res.end(JSON.stringify(expense));
       });
